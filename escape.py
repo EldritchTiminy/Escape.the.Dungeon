@@ -60,7 +60,7 @@ def room_0(plr):
 
 
 
-
+pissshitfart
 def room_1(plr):
   in_room_1 = True if plr.quit_game == False and plr.game_over == False else False
   
