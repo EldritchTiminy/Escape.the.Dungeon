@@ -84,7 +84,7 @@ def room_0(plr):
   9. Quit Game...
   
     """.format(second = "2. Search the room" if plr.switch["sword"] != True else " "))
-    room_zero_choice = input("  Please select and option (1 - 4) and press 'Enter': ") or int(0)
+    room_zero_choice = input("  Please select and option (1 - 2) and press 'Enter': ") or int(0)
     try:
       r0_inp = int(room_zero_choice)
     except:
@@ -259,7 +259,7 @@ def room_1(plr):
     9. Quit Game...
   
       """.format(first = "1. Decipher the code" if plr.switch["book"] == True else " "))
-      wall_scratch_choice = input("Please select an option (1 - 4) and press 'Enter': ") or int(0)
+      wall_scratch_choice = input("Please select an option (1 - 2) and press 'Enter': ") or int(0)
       try:
         wc_inp = int(wall_scratch_choice)
       except:
@@ -312,10 +312,10 @@ def room_1(plr):
     {fourth}
     5. Go back.
   ---------------------------
-    9. Quit to Main Menu...
+    9. Quit Game...
 
     """.format(prompt = prompt3 if plr.switch["scratches"] == False and plr.switch["wallspell"] == False else prompt2, first = "1. Investigate the scratches on the wall." if plr.switch["scratches"] == True else " ", second = "2. Investigate the skeleton." if plr.switch["skeleton"] == True else " ", third = "3. Use the spell." if plr.switch["wallspell"] == True else " ", fourth = "4. Continue forward." if plr.switch["scratches"] == False and plr.switch["wallspell"] == False else " "))
-    room_one_choice = input("Please select an option (1 - 4) and press 'Enter': ") or int(0)
+    room_one_choice = input("Please select an option (1 - 5) and press 'Enter': ") or int(0)
     try:
       r1_inp = int(room_one_choice)
     except:
@@ -639,7 +639,7 @@ def room_3(plr):
     9. Quit Game...
 
     """.format(prompt = prompt2 if plr.switch["riddle"] == True else prompt3, first = "1. Try to answer the riddle." if plr.switch["riddle"] == True else " ", second = "2. Continue forward." if plr.switch["riddle"] != True else " "))
-    room_three_choice = input("Please select an option (1 - 4) and press 'Enter': ") or int(0)
+    room_three_choice = input("Please select an option (1 - 3) and press 'Enter': ") or int(0)
     try:
       r3_inp = int(room_three_choice)
     except:
@@ -731,7 +731,7 @@ while game_on == True:
     2. Quit Game
   ==============
   """)
-  m_menu = input("Please select an option (1 - 4) and press 'Enter': ") or int(0)
+  m_menu = input("Please select an option (1 - 2) and press 'Enter': ") or int(0)
   try:
     m_inp = int(m_menu)
   except:
