@@ -113,11 +113,6 @@ def room_0(plr):
       input("  Please press 'Enter' to continue...")
       continue
 
-
-
-
-
-
 def room_1(plr):
   in_room_1 = True if plr.quit_game == False and plr.game_over == False else False
   
@@ -356,11 +351,6 @@ def room_1(plr):
       input("  Please press 'Enter' to continue...")
       continue
 
-
-
-
-
-
 def room_2(plr):
   in_room_2 = True if plr.quit_game == False and plr.game_over == False else False
   
@@ -507,11 +497,6 @@ def room_2(plr):
     else:
       print("Error: selection not recognized.")
       continue
-
-
-
-
-
 
 def room_3(plr):
   in_room_3 = True if plr.quit_game == False and plr.game_over == False else False
@@ -682,11 +667,6 @@ def room_3(plr):
       """)
       input("Please press 'Enter' to continue...")
 
-
-
-
-
-
 def dungeon_end(plr):
   print("""
   
@@ -716,10 +696,6 @@ def dungeon_end(plr):
   input("Please press 'Enter' to continue...")
   plr.game_over = True
 
-
-
-
-
 class Character:
   switch = {}
   switch = {"skeleton": True, "scratches": True, "enemy": True, "sword": False, "book": False, "wallspell": False, "riddle": True, "wake": True, "room1intro": True, "room3intro": True}
@@ -736,17 +712,19 @@ class Character:
     self.game_over = False
     self.quit_game = False
 Player = Character()
-
-
-
-
-
-
 game_on = True
 while game_on == True:
   if Player.quit_game == True:
     break
   print("""
+  
+  
+  
+  
+  ==================
+  ESCAPE THE DUNGEON
+  ==================
+  
   ==============
   Main Menu:
     1. Play Game
